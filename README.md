@@ -1,5 +1,9 @@
 # burp-wildcard
+
 burp-wildcard 简单修改用以支持burp2020.11.2及后续的版本主题。
+
+代码修改点 burp-wildcard-plus\src\hvqzao\wildcard\WildcardExtension.java  line 45,51
+
 
 # wildcard插件介绍
 
@@ -34,13 +38,3 @@ github  hvqzao/burp-wildcard:  https://github.com/hvqzao/burp-wildcard
 如果帮助到了你，关注公众号，点个star吧，嘿嘿
 
 
-# 代码修改点 burp-wildcard-plus\src\hvqzao\wildcard\WildcardExtension.java
-
-//if ("nimbu".equals(UIManager.getLookAndFeel().getName().toLowerCase()) == false) {
-            if (true) {
-               //已知Nimbus,Light,Dark主题兼容本插件,其他burp主题可能不兼容,遇到此类情况请更换主题.
-                new PrintWriter(callbacks.getStdout(), true).println("PinYin: Yi Zhi Nimbus,Light,Dark Zhu Ti Jian Rong Ben Cha Jian,Qi Ta Burp Zhu Ti Ke Neng Bu Jian Rong ,Yu Dao Ci Lei Qing Kuang Qing Geng Huan Zhu Ti.");
-                new PrintWriter(callbacks.getStdout(), true).println("English: Nimbus,Light and Dark themes are known to be compatible with this plug-in, other BurP themes may not be compatible, please change the theme in such cases.");
-                //callbacks.unloadExtension();
-                //return;
-            }
