@@ -27,6 +27,8 @@ github  hvqzao/burp-wildcard:  https://github.com/hvqzao/burp-wildcard
 
 具体图像说明请查看NOVASEC微信公众号文章： 暂无
 
+# 其他
+
 感谢原作者的开源
 
 如果帮助到了你，关注公众号，点个star吧，嘿嘿
