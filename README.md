@@ -29,7 +29,7 @@ github  hvqzao/burp-wildcard:  https://github.com/hvqzao/burp-wildcard
 
 4、唯一的好消息是, Light和Dark主题是基于Nimbus主题进阶的，只要修修源码就能重用在这两个主题上。
 
-具体图像说明请查看NOVASEC微信公众号文章： 暂无
+具体说明请查看NOVASEC微信公众号文章： 暂无
 
 # 其他
 
