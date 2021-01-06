@@ -4,6 +4,7 @@ burp-wildcard 简单修改用以支持burp2020.11.2及后续的版本主题。
 
 代码修改点 burp-wildcard-plus\src\hvqzao\wildcard\WildcardExtension.java  line 45,51
 
+具体修改说明请查看NOVASEC微信公众号文章： https://mp.weixin.qq.com/s/gDlGZLbufUTMXQ7IxMX0iQ
 
 # wildcard插件介绍
 
@@ -29,12 +30,11 @@ github  hvqzao/burp-wildcard:  https://github.com/hvqzao/burp-wildcard
 
 4、唯一的好消息是, Light和Dark主题是基于Nimbus主题进阶的，只要修修源码就能重用在这两个主题上。
 
-具体说明请查看NOVASEC微信公众号文章： 暂无
 
 # 其他
 
 感谢原作者的开源
 
-如果帮助到了你，关注公众号，点个star吧，嘿嘿
+如果帮助到了你，关注NOVASEC公众号，点个star吧，嘿嘿
 
 
