@@ -1,5 +1,15 @@
 # burp-wildcard
 
+
+# 最新BUG
+
+![image](https://user-images.githubusercontent.com/46115146/177313557-31d24ba5-fde2-4453-a35e-7117701ae252.png)
+
+
+高版本burpsuite上布局混乱  如 2022.3.9
+
+
+
 burp-wildcard 简单修改用以支持burp2020.11.2及后续的版本主题。
 
 代码修改点 burp-wildcard-plus\src\hvqzao\wildcard\WildcardExtension.java  line 45,51
