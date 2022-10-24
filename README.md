@@ -10,6 +10,14 @@
 
 2. wildcard-1.08.fix 基于wildcard1.0.8简单修改，解决2022.3.9等高版本上,显示布局混乱问题。(关于无法点击左边的标签问题, 未成功测试，需用户自行测试)
 
+![image](https://user-images.githubusercontent.com/46115146/197442839-407a7490-ad1c-46f9-9a0f-264e3cfd6277.png)
+
+
+![image](https://user-images.githubusercontent.com/46115146/197442898-fc6d925c-fcbc-4dd0-82fc-e49cfdf11d61.png)
+
+
+
+
 # release文件介绍
 
 - ~~wildcard-1.07.fix.1.jdk8.jar   基于1.0.7版本修改,支持版本至burp2022.3，使用jdk8打包, 可忽略~~
