@@ -9,9 +9,9 @@
 
 # release文件介绍
 
-- wildcard-1.07.fix.1.jdk8.jar   基于1.0.7版本修改,支持版本至burp2022.3，使用jdk8打包, 可忽略
+- ~~wildcard-1.07.fix.1.jdk8.jar   基于1.0.7版本修改,支持版本至burp2022.3，使用jdk8打包, 可忽略~~
 
-- wildcard-1.07.fix.src.zip 为对应源码文件, 可忽略
+- ~~wildcard-1.07.fix.src.zip 为对应源码文件, 可忽略~~
 
   
 
