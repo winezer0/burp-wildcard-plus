@@ -1,20 +1,25 @@
 # burp-wildcard
 
 
-# 最新BUG
 
-![image](https://user-images.githubusercontent.com/46115146/177313557-31d24ba5-fde2-4453-a35e-7117701ae252.png)
+## 更新记录
+
+1. 基于wildcard1.0.7简单修改，支持burp2020.11.2及后续的版本主题。
+2. 基于wildcard1.0.8简单修改，解决2022.3.9等高版本上,显示布局混乱问题。(关于无法点击左边的标签问题, 未成功测试，需用户自行测试)
+
+# release文件介绍
+
+- wildcard-1.07.fix.1.jdk8.jar   基于1.0.7版本修改,支持版本至burp2022.3，使用jdk8打包
+- 
+  wildcard-1.08.fix.1.jdk8.jar  基于1.0.8版本修改,支持版本至burp2022.X，使用jdk8打包
+- wildcard-1.08.fix.1.jdk11.jar  基于1.0.8版本修改,支持版本至burp2022.X，使用jdk11打包
+- wildcard-1.08.fix.2.jdk8.jar  基于1.0.8版本修改,支持版本至burp2022.X，使用jdk8打包
+- wildcard-1.08.fix.2.jdk11.jar  基于1.0.8版本修改,支持版本至burp2022.X，使用jdk11打包
+  
 
 
-高版本burpsuite上布局混乱  如 2022.3.9
 
 
-
-burp-wildcard 简单修改用以支持burp2020.11.2及后续的版本主题。
-
-代码修改点 burp-wildcard-plus\src\hvqzao\wildcard\WildcardExtension.java  line 45,51
-
-具体修改说明请查看NOVASEC微信公众号文章： https://mp.weixin.qq.com/s/gDlGZLbufUTMXQ7IxMX0iQ
 
 # wildcard插件介绍
 
@@ -31,7 +36,24 @@ github  hvqzao/burp-wildcard:  https://github.com/hvqzao/burp-wildcard
 5、出于安全原因,每次加载本扩展程序时，需要显式启用此功能,允许保存为自动压缩。
 
 
-# Burp新版无法加载wildcard：
+
+# BUG记录
+
+### 2022版本布局混乱BUG
+
+![image](https://user-images.githubusercontent.com/46115146/177313557-31d24ba5-fde2-4453-a35e-7117701ae252.png)
+
+
+高版本burpsuite上布局混乱  如 2022.3.9
+
+burp-wildcard 简单修改用以支持burp2020.11.2及后续的版本主题。
+
+代码修改点 burp-wildcard-plus\src\hvqzao\wildcard\WildcardExtension.java  line 45,51
+
+具体修改说明请查看NOVASEC微信公众号文章： https://mp.weixin.qq.com/s/gDlGZLbufUTMXQ7IxMX0iQ
+
+### Burp新版无法加载wildcard：
+
 1、burpsuite官方开放的扩展管理API默认只支持Nimbus主题，与其他主题不兼容。
 
 2、wildcard是基于API默认开发的，载入时会判断是否处于Nimbus主题内，如果不是当退出插件。
@@ -41,10 +63,7 @@ github  hvqzao/burp-wildcard:  https://github.com/hvqzao/burp-wildcard
 4、唯一的好消息是, Light和Dark主题是基于Nimbus主题进阶的，只要修修源码就能重用在这两个主题上。
 
 
-# 其他
 
-感谢原作者的开源
 
-如果帮助到了你，关注NOVASEC公众号，点个star吧，嘿嘿
 
 
