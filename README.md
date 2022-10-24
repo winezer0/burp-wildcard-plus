@@ -9,13 +9,28 @@
 
 # release文件介绍
 
-- wildcard-1.07.fix.1.jdk8.jar   基于1.0.7版本修改,支持版本至burp2022.3，使用jdk8打包
-- 
-  wildcard-1.08.fix.1.jdk8.jar  基于1.0.8版本修改,支持版本至burp2022.X，使用jdk8打包
-- wildcard-1.08.fix.1.jdk11.jar  基于1.0.8版本修改,支持版本至burp2022.X，使用jdk11打包
-- wildcard-1.08.fix.2.jdk8.jar  基于1.0.8版本修改,支持版本至burp2022.X，使用jdk8打包
-- wildcard-1.08.fix.2.jdk11.jar  基于1.0.8版本修改,支持版本至burp2022.X，使用jdk11打包
+- wildcard-1.07.fix.1.jdk8.jar   基于1.0.7版本修改,支持版本至burp2022.3，使用jdk8打包, 可忽略
+
+- wildcard-1.07.fix.src.zip 为对应源码文件, 可忽略
+
   
+
+- 
+  wildcard-1.08.fix.1.jdk8.jar  基于1.0.8版本修改，使用源码自带burp API文件，使用jdk8打包，支持版本至burp2022.X
+  
+- wildcard-1.08.fix.1.jdk11.jar  基于1.0.8版本修改，使用源码自带burp API文件，使用jdk11打包，支持版本至burp2022.X
+
+- wildcard-1.08.fix.1.src.zip  为对应源码文件, 可忽略
+
+  
+
+- wildcard-1.08.fix.2.jdk8.jar  基于1.0.8版本修改，使用2022.3.9版本下导出的burp API文件，使用jdk8打包，支持版本至burp2022.X
+
+- wildcard-1.08.fix.2.jdk11.jar  基于1.0.8版本修改，使用2022.3.9版本下导出的burp API文件，使用jdk11打包，支持版本至burp2022.X
+
+- wildcard-1.08.fix.2.src.zip  为对应源码文件, 可忽略
+
+
 
 
 
@@ -43,14 +58,9 @@ github  hvqzao/burp-wildcard:  https://github.com/hvqzao/burp-wildcard
 
 ![image](https://user-images.githubusercontent.com/46115146/177313557-31d24ba5-fde2-4453-a35e-7117701ae252.png)
 
+高版本burpsuite上布局混乱  如 2022.3.9，通过删除无用的标签语句进行初步修复。
 
-高版本burpsuite上布局混乱  如 2022.3.9
 
-burp-wildcard 简单修改用以支持burp2020.11.2及后续的版本主题。
-
-代码修改点 burp-wildcard-plus\src\hvqzao\wildcard\WildcardExtension.java  line 45,51
-
-具体修改说明请查看NOVASEC微信公众号文章： https://mp.weixin.qq.com/s/gDlGZLbufUTMXQ7IxMX0iQ
 
 ### Burp新版无法加载wildcard：
 
@@ -62,7 +72,9 @@ burp-wildcard 简单修改用以支持burp2020.11.2及后续的版本主题。
 
 4、唯一的好消息是, Light和Dark主题是基于Nimbus主题进阶的，只要修修源码就能重用在这两个主题上。
 
+代码修改点 burp-wildcard-plus\src\hvqzao\wildcard\WildcardExtension.java  line 45,51
 
+具体修改及编译教程查看： https://mp.weixin.qq.com/s/gDlGZLbufUTMXQ7IxMX0iQ
 
 
 
