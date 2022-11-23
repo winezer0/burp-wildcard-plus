@@ -1,55 +1,38 @@
-# burp-wildcard
+# wildcard 维护分支
 
 
 
 ## 更新记录
 
-1. wildcard-1.07.fix 基于wildcard1.0.7简单修改，支持burp2020.11.2及后续的版本主题。
+##### 文件下载
 
-   
+```
+release文件夹
+```
 
-2. wildcard-1.08.fix 基于wildcard1.0.8简单修改，解决2022.3.9等高版本上,显示布局混乱问题。(关于无法点击左边的标签问题, 未成功测试，需用户自行测试)
+##### 顽固问题
 
-![image](https://user-images.githubusercontent.com/46115146/197442839-407a7490-ad1c-46f9-9a0f-264e3cfd6277.png)
+```
+1、MAC系统下,间歇性无法点击左边的标签问题, 暂未成功解决，需用户自行测试
+2、Burpsuite v2022.9.5及以上版本API修改,启用插件不生效.
+```
 
+##### wildcard-1.07.fix.1
 
-![image](https://user-images.githubusercontent.com/46115146/197442898-fc6d925c-fcbc-4dd0-82fc-e49cfdf11d61.png)
+```
+基于wildcard v1.0.7简单修改，支持burp2020.11.2及后续的版本主题。
+具体修复： https://mp.weixin.qq.com/s/gDlGZLbufUTMXQ7IxMX0iQ
+```
 
+##### wildcard-1.08.fix.1
 
-
-
-# release文件介绍
-
-- ~~wildcard-1.07.fix.1.jdk8.jar   基于1.0.7版本修改,支持版本至burp2022.3，使用jdk8打包, 可忽略~~
-
-- ~~wildcard-1.07.fix.src.zip 为对应源码文件, 可忽略~~
-
-  
-
-- 
-  wildcard-1.08.fix.1.jdk8.jar  基于1.0.8版本修改，使用源码自带burp API文件，使用jdk8打包，支持版本至burp2022.X
-  
-- wildcard-1.08.fix.1.jdk11.jar  基于1.0.8版本修改，使用源码自带burp API文件，使用jdk11打包，支持版本至burp2022.X
-
-- wildcard-1.08.fix.1.src.zip  为对应源码文件, 可忽略
-
-  
-
-- wildcard-1.08.fix.2.jdk8.jar  基于1.0.8版本修改，使用2022.3.9版本下导出的burp API文件，使用jdk8打包，支持版本至burp2022.X
-
-- wildcard-1.08.fix.2.jdk11.jar  基于1.0.8版本修改，使用2022.3.9版本下导出的burp API文件，使用jdk11打包，支持版本至burp2022.X
-
-- wildcard-1.08.fix.2.src.zip  为对应源码文件, 可忽略
+```
+基于wildcard v1.0.8 修复解决Burpsuite v2022.3.9及以上版本显示布局混乱问题。
+```
 
 
 
-
-
-
-
-# wildcard插件介绍
-
-github  hvqzao/burp-wildcard:  https://github.com/hvqzao/burp-wildcard
+## 中文介绍
 
 1、此扩展程序试图解决(插件标签太多会使界面冗余难看)的问题
 
@@ -63,29 +46,28 @@ github  hvqzao/burp-wildcard:  https://github.com/hvqzao/burp-wildcard
 
 
 
-# BUG记录
+## 原版介绍
 
-### 2022版本布局混乱BUG
+ hvqzao/burp-wildcard:  https://github.com/hvqzao/burp-wildcard
 
-![image](https://user-images.githubusercontent.com/46115146/177313557-31d24ba5-fde2-4453-a35e-7117701ae252.png)
+There is number of great Burp extension out there. Most of them create their own tabs. Too many of them makes the interface heavy and ugly. This extension tries to address this issue. It provides ability to hijack tabs belonging to other extensions (it is not oficially supported by Burp Extensions). For safety reasons, in order to work, this feature must be explicitly enabled on Options tab each time extension is loaded.
 
-高版本burpsuite上布局混乱  如 2022.3.9，通过删除无用的标签语句进行初步修复。
+Before:
 
+![wildcard-1](https://cloud.githubusercontent.com/assets/4956006/9557495/b4b1de86-4ddc-11e5-9b7a-d6bec8af7681.png)
 
+After:
 
-### Burp新版无法加载wildcard：
+![wildcard-2](https://cloud.githubusercontent.com/assets/4956006/9557497/b84756a2-4ddc-11e5-91a7-01c655147adb.png)
 
-1、burpsuite官方开放的扩展管理API默认只支持Nimbus主题，与其他主题不兼容。
+Extension also provides CSRF Handling mini-extension source (Python) which could be saved as a file, customized and loaded into Burp later on. Newly added extension will handle application specific CSRF tokens.
 
-2、wildcard是基于API默认开发的，载入时会判断是否处于Nimbus主题内，如果不是当退出插件。
+This extension will automatically turn off if dark theme "Darkula" (BurpSuite 2+) is enabled as it is not compatible with it.
 
-3、由于2020.11.2及以上版本没有Nimbus主题，只有统一的Light主题，和Dark主题，导致wildcard插件仅支持至burp 2020.11.1及以下版本，不支持burp 2020.11.2
+Requires Java 8.
 
-4、唯一的好消息是, Light和Dark主题是基于Nimbus主题进阶的，只要修修源码就能重用在这两个主题上。
+This extension _DOES NOT_ require Burp Suite Professional
 
-代码修改点 burp-wildcard-plus\src\hvqzao\wildcard\WildcardExtension.java  line 45,51
-
-具体修改及编译教程查看： https://mp.weixin.qq.com/s/gDlGZLbufUTMXQ7IxMX0iQ
 
 
 
