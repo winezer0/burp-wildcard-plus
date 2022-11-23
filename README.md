@@ -13,8 +13,8 @@ release文件夹
 ##### 顽固问题
 
 ```
-1、MAC系统下,间歇性无法点击左边的标签问题, 暂未成功解决
-2、Burpsuite v2022.9.5及以上版本API修改,启用插件不生效.
+1、MAC系统下,间歇性无法点击左边的标签问题, 暂未成功解决 https://github.com/hvqzao/burp-wildcard/issues/7
+2、Burpsuite v2022.9.5及以上版本API修改,启用插件不生效. https://github.com/hvqzao/burp-wildcard/issues/8
 ```
 
 ##### wildcard-1.07.fix.1
@@ -70,5 +70,10 @@ This extension _DOES NOT_ require Burp Suite Professional
 
 
 
+## NEED STAR And ISSUE
 
+```
+1、右上角点击Star支持更新.
+2、ISSUE或NOVASEC提更新需求
+```
 
