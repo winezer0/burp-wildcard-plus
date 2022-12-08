@@ -77,3 +77,4 @@ This extension _DOES NOT_ require Burp Suite Professional
 2、ISSUE或NOVASEC提更新需求
 ```
 
+![NOVASEC](doc/NOVASEC.jpg)
